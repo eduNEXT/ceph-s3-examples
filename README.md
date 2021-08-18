@@ -1,9 +1,9 @@
 # CEPH S3 Commands
-This repo offers commands to interact with CEPH file system. This service exposes an API compatible with AWS S3, reason why the main dependency of this project is boto3.
+This repo offers commands to interact with a CEPH file system account. This service exposes an API compatible with AWS S3, reason why the main dependency of this project is boto3.
 
 # How to use it.
 
-1. Create a `credentials.json` file. This file will contain the credentials to connecto to the CEPH service. You'll find a `credentials.json.tpl` file as a reference indicating the credentials required. Please DON'T COMMIT `credentials.json` file (it is ignored in the repo just in case)
+1. Create a `credentials.json` file. This file will contain the credentials to connect to the CEPH FS account. You'll find a `credentials.json.tpl` file as a reference indicating the credentials required. Please DON'T COMMIT `credentials.json` file (it is ignored in the repo just in case)
 
 2. Create a virtualenv in python3 and install the requirements with `pip install -r requirements.txt`. The commands have been tested in Python 3.7 and 3.8.
 

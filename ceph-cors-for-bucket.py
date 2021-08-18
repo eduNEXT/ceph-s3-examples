@@ -42,7 +42,7 @@ def main():
                         dest='bucket_name',
                         action='store',
                         required=True,
-                        help='the name of the bucket to create')
+                        help='the name of the bucket whose CORS rules will be processed')
     parser.add_argument('--create-bucket',
                         action='store_true',
                         dest='create_bucket',
@@ -51,7 +51,7 @@ def main():
                         default='get',
                         choices=['set', 'get', 'delete'],
                         dest='cors_action',
-                        help='Set the action to perform with CORS. By default the command gets the bucket CORS rules')
+                        help='Set the action to perform over the bucket CORS rules. "get" is the default action')
     args = parser.parse_args()
 
     s3 = boto3.resource('s3',
